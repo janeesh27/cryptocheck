@@ -4,9 +4,10 @@
     margin: 4rem auto;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+    padding: .5rem;
     background-color: black;
 }
+.hero .container p{color: gray;}
 
 .hero .left {
     padding: 1rem;

@@ -1,21 +1,28 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './Hero.css'
 import Crypto from '../media/hero-img.jpeg'
 
 const Hero = () => {
+
+    function SearchBar() {
+        const [searchQuery, setSearchQuery] = useState('');
+        
+    }
+      
     return (
         <div className='hero'>
             <div className='container'>
 
                 {/* Left Side */}
                 <div className='left'>
-                    <p>Buy & Sell Crypto 24/7 using your retirement account</p>
-                    <h1>Invest in Cryptocurreny with Your IRA</h1>
-                    <p>Buy, Sell, and store hundreds of cryptocurrencies</p>
+                    <p>Stay ahead of the crypto market with real-time pricing updates.</p>
+                    <h1>Unleash crypto opportunities!</h1>
+                    <p>Find crypto prices with ease.</p>
                     <div className='input-container'>
-                        <input type='email' placeholder='Enter your email' />
-                        <button className='btn'>Learn More</button>
+                    <input type="text" placeholder="Search crypto by name or symbol" value={searchQuery} onChange={e => setSearchQuery(e.target.value)}/>
+                        <button className='btn' onClick={handleSearch}>Search</button>
                     </div>
+                    
                 </div>
 
 
