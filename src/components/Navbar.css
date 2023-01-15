@@ -59,8 +59,9 @@ h1{
         height: 100vh;
         transition: 0.4s;
         z-index: 2;
-        background: #fff;
+        background:#000000;
         border-left: 1px solid #eee;
+        color: wheat;
     }
 
     .nav-menu.active {
